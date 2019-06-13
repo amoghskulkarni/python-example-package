@@ -17,7 +17,7 @@ Packaging example for PyPi
 
 ## Important steps
 
-1. (Assuming you have the working project) Create the supporting files -
+#### (Assuming you have the working project) Create the supporting files -
 
 - Create `setup.py`
 
@@ -77,7 +77,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-2. Generate distribution archives
+#### Generate distribution archives
 
 Replace `python3` with `python` in case you're using Python 2.7.
 
@@ -95,7 +95,7 @@ python3 setup.py sdist bdist_wheel
 
 This will create a `/dist` directory and it will have built distribution in it. 
 
-3. Upload 
+#### Upload 
 
 Replace `python3` and `python` in case you're using Python 2.7. 
 
@@ -111,7 +111,7 @@ python3 -m pip install --user --upgrade twine
 python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 ```
 
-4. Install your package 
+#### Install your package 
 
 Following command is for TestPyPi, seperate instance of PyPi, meant for testing purposes.
 
